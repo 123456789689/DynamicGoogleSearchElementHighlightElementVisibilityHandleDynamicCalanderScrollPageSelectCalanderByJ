@@ -39,7 +39,7 @@ public class SelectCalendarByJavascript {
 		
 	}
 	
-	public static void SelectCalendarByJavascript(WebDriver d, WebElement element, String datevalue) {
+	public static void SelectCalendarByJavascript(WebDriver d, WebElement element, String datevalue) { //Can be used generic
 		JavascriptExecutor js = ((JavascriptExecutor) d);
 		js.executeScript("arguments[0].setAttribute('value','"+datevalue+"');", element);
 	}
